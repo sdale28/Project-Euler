@@ -1,13 +1,13 @@
 /**
- * @author Sam Dale 
+ * @author Sam Dale
  * @version 11/27/13
- * 
+ *
  * Problem11:
  * What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
  */
 public class Problem11
 {
-    public static void main()
+    public static void main(String args[])
     {
         int [] row1={8, 02, 22, 97, 38, 15, 00, 40, 00, 75, 04, 05, 07, 78, 52, 12, 50, 77, 91, 8};
         int [] row2={49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 04, 56, 62, 00};
@@ -31,7 +31,7 @@ public class Problem11
         int [] row20={01, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 01, 89, 19, 67, 48};
         int [][] rows={row1,row2,row3,row4,row5,row6,row7,row8,row9,row10,row11,row12,row13,row14,row15,row16,row17,row18,row19,row20};
         int highest=0;
-        
+
         for (int i=0;i<20;i++) //Number of rows to add.
         {
             for (int j=0;j<=16;j++) //First of each row to add.
@@ -43,7 +43,7 @@ public class Problem11
                     highest=product;
             }
         }
-        
+
         for (int i=0;i<=16;i++) //Number of columns to add.
         {
             for (int j=0;j<20;j++) //First of each downward to add.
@@ -55,7 +55,7 @@ public class Problem11
                     highest=product;
             }
         }
-        
+
         for (int i=0;i<=16;i++) //Number of columns to add.
         {
             for (int j=0;j<=16;j++) //First of each downward to add.
@@ -67,7 +67,7 @@ public class Problem11
                     highest=product;
             }
         }
-        
+
         for (int i=19;i>=4;i--) //Number of columns to add.
         {
             for (int j=0;j<=16;j++) //First of each downward to add.

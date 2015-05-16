@@ -1,17 +1,17 @@
 /**
- * @author Sam Dale 
+ * @author Sam Dale
  * @version 12/1/13
- * 
+ *
  * Problem17: If all the numbers from 1 to 1000 (one thous) inclusive were written out in words, how many letters would be used?
  */
 public class Problem17
 {
-    public static void main()
+    public static void main(String args[])
     {
         String [] nums = new String[1001];
         for (int i=1;i<=1000;i++)
             nums[i]="";
-            
+
         for (int i=1;i<1000;i++)
         {
             if(i/100==1)
@@ -32,10 +32,10 @@ public class Problem17
                 nums[i]=nums[i].concat("eighthundred");
             if(i/100==9)
                 nums[i]=nums[i].concat("ninehundred");
-            
+
             if (i>100 && i%100!=0)
                 nums[i]=nums[i].concat("and");
-                
+
             if (i%100==10)
                 nums[i]=nums[i].concat("ten");
             if (i%100==11)
@@ -56,7 +56,7 @@ public class Problem17
                 nums[i]=nums[i].concat("eighteen");
             if (i%100==19)
                 nums[i]=nums[i].concat("nineteen");
-            
+
             if (i%100>=20 && i%100<=29)
                 nums[i]=nums[i].concat("twenty");
             if (i%100>=30 && i%100<=39)
@@ -73,7 +73,7 @@ public class Problem17
                 nums[i]=nums[i].concat("eighty");
             if (i%100>=90 && i%100<=99)
                 nums[i]=nums[i].concat("ninety");
-                
+
             if (i%10==1 && !(i%100<20 && i%100>9))
                 nums[i]=nums[i].concat("one");
             if (i%10==2 && !(i%100<20 && i%100>9))
@@ -94,7 +94,7 @@ public class Problem17
                 nums[i]=nums[i].concat("nine");
         }
         nums[1000]="onethousand";
-        
+
         int count=0;
         for (int i=1;i<=1000;i++)
         {

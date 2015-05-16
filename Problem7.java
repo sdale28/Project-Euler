@@ -1,17 +1,17 @@
 /**
  * @author Sam Dale
  * @version 11/27/13
- * 
+ *
  * Problem7:
  * What is the 10001st prime number?
  */
 public class Problem7
 {
-    public static void main()
+    public static void main(String args[])
     {
         int count=0;
         boolean prime=false;
-        
+
         for (int i=2;count<10001 && i<1000000000;i++)
         {
             prime=prime(i);
@@ -23,7 +23,7 @@ public class Problem7
         }
         System.out.println(count);
     }
-    
+
     public static boolean prime(int i)
     {
         boolean prime=true;

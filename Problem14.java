@@ -1,14 +1,14 @@
 /**
  * @author Sam Dale
  * @version 11/28/13
- * 
- * Problem14: 
+ *
+ * Problem14:
  * Longest Collatz Sequence
  * Which starting number, under one million, produces the longest chain?
  */
 public class Problem14
 {
-    public static void main()
+    public static void main(String args[])
     {
         long longest=0;
         for (int i=2;i<1000000;i++)
@@ -23,7 +23,7 @@ public class Problem14
                     currentNum=3*currentNum+1;
                 currentLength++;
             }
-            
+
             if (currentLength>longest)
             {
                 longest=currentLength;

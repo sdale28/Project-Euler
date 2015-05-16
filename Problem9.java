@@ -1,14 +1,14 @@
 /**
  * @author Sam Dale
  * @version 11/27/13
- * 
+ *
  * Problem9:
  * There exists exactly one Pythagorean triplet for which a + b + c = 1000.
  * Find the product abc.
  */
 public class Problem9
 {
-    public static void main()
+    public static void main(String args[])
     {
         boolean works=true;
         for (int a=1;a<1000;a++)

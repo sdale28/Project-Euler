@@ -1,13 +1,13 @@
 /**
  * @author Sam Dale
  * @version 12/1/13
- * 
+ *
  * Problem16: What is the sum of the digits of the number 2^1000?
  */
 import java.math.*;
 public class Problem16
 {
-    public static void main()
+    public static void main(String args[])
     {
         BigInteger value=new BigInteger("2");
         value=value.pow(1000);

@@ -1,13 +1,13 @@
 /**
- * @author Sam Dale 
+ * @author Sam Dale
  * @version 12/26/13
- * 
+ *
  * Problem23: Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.
  */
 import java.util.*;
 public class Problem23
 {
-    public static void main()
+    public static void main(String args[])
     {
         List<Integer> abundants=new ArrayList<>();
         for (int i=1;i<28123/2;i++)

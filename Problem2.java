@@ -1,12 +1,12 @@
 /**
- * @author Sam Dale 
+ * @author Sam Dale
  * @version 10/2/13
- * 
+ *
  * Add the even Fibonacci numbers less than 4 million.
  */
 public class Problem2
 {
-    public static void main()
+    public static void main(String args[])
     {
         int fibnum=1;
         int fibnumminus=0;

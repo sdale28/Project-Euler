@@ -1,25 +1,25 @@
 /**
- * @author Sam Dale 
+ * @author Sam Dale
  * @version 12/25/13
- * 
+ *
  * Problem20: Find the sum of the digits in the number 100!
  */
 import java.math.*;
 public class Problem20
 {
-    public static void main()
+    public static void main(String args[])
     {
         System.out.println("Bla.");
         BigDecimal factorial=new BigDecimal("1");
         for (int i=100;i>0;i--)
             factorial=factorial.multiply(new BigDecimal(i));
         System.out.println(factorial);
-        
+
         BigInteger value=factorial.toBigInteger();
         double dubVal=factorial.doubleValue();
         System.out.println(calculate(value,dubVal));
     }
-    
+
     public static int calculate(BigInteger value,double dubVal)
     {
         int count=0;

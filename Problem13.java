@@ -1,13 +1,13 @@
 /**
  * @author Sam Dale
  * @version 11/28/13
- * 
+ *
  * Problem13:
  * Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
  */
 public class Problem13
 {
-    public static void main()
+    public static void main(String args[])
     {
         double [] num1={37107287533902102798.797998220837590246510135740250};
         double [] num2={46376937677490009712.648124896970078050417018260538};
@@ -110,7 +110,7 @@ public class Problem13
         double [] num99={20849603980134001723.930671666823555245252804609722};
         double [] num100={53503534226472524250.874054075591789781264330331690};
         double [][] list={num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,num11,num12,num13,num14,num15,num16,num17,num18,num19,num20,num21,num22,num23,num24,num25,num26,num27,num28,num29,num30,num31,num32,num33,num34,num35,num36,num37,num38,num39,num40,num41,num42,num43,num44,num45,num46,num47,num48,num49,num50,num51,num52,num53,num54,num55,num56,num57,num58,num59,num60,num61,num62,num63,num64,num65,num66,num67,num68,num69,num70,num71,num72,num73,num74,num75,num76,num77,num78,num79,num80,num81,num82,num83,num84,num85,num86,num87,num88,num89,num90,num91,num92,num93,num94,num95,num96,num97,num98,num99,num100};
-        
+
         double sum=0;
         for (int i=0;i<100;i++)
             sum+=list[i][0];

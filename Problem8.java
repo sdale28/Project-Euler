@@ -1,13 +1,13 @@
 /**
  * @author Sam Dale
  * @version 11/27/13
- * 
+ *
  * Problem8:
  * Find the greatest product of five consecutive digits in the 1000-digit number.
  */
 public class Problem8
 {
-    public static void main()
+    public static void main(String args[])
     {
         System.out.println("Stuff.");
         int [] products = new int [1000];
@@ -23,7 +23,7 @@ public class Problem8
             }
             products[i]=currentProduct;
         }
-        
+
         int highest=0;
         for (int i=0;i<products.length;i++)
         {

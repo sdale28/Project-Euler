@@ -1,12 +1,12 @@
 /**
- * @author Sam Dale 
+ * @author Sam Dale
  * @version 12/26/13
- * 
+ *
  * Problem21: Evaluate the sum of all the amicable numbers under 10000.
  */
 public class Problem21
 {
-    public static void main()
+    public static void main(String args[])
     {
         int sum=0;
         for (int num=1;num<10000;num++)

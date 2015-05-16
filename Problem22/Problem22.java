@@ -1,7 +1,7 @@
 /**
- * @author Sam Dale 
+ * @author Sam Dale
  * @version 12/26/13
- * 
+ *
  * Problem22: What is the total of all the name scores in the file?
  */
 import java.util.*;
@@ -9,7 +9,7 @@ import java.io.*;
 import java.math.*;
 public class Problem22
 {
-    public static void main()
+    public static void main(String args[])
     {
         int num=0;
         try
@@ -58,7 +58,7 @@ public class Problem22
 
         double total=0;
         for (int i=0;i<list.length;i++)
-        {    
+        {
             int sum=0;
             for (int j=0;j<list[i].length();j++)
                 sum+=((int)list[i].charAt(j))-64;

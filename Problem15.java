@@ -1,13 +1,13 @@
 /**
  * @author Sam Dale
  * @version 11/28/13
- * 
+ *
  * Problem15:
  * How many such routes are there through a 20×20 grid?
  */
 public class Problem15
 {
-    public static void main()
+    public static void main(String args[])
     {
         double [] row0=new double [1];
         double [] row1=new double [2];
@@ -51,7 +51,7 @@ public class Problem15
         double [] row39=new double [40];
         double [] row40=new double [41];
         double [][] list={row0,row1,row2,row3,row4,row5,row6,row7,row8,row9,row10,row11,row12,row13,row14,row15,row16,row17,row18,row19,row20,row21,row22,row23,row24,row25,row26,row27,row28,row29,row30,row31,row32,row33,row34,row35,row36,row37,row38,row39,row40};
-        
+
         for (int i=0;i<=40;i++)
         {
             list[i][0]=1;
@@ -66,7 +66,7 @@ public class Problem15
                 list[i][list[i].length-1]=1;
             }
         }
-        
+
         for (int i=0;i<list.length;i++)
         {
             for (int j=0;j<list[i].length;j++)
@@ -75,7 +75,7 @@ public class Problem15
             }
             System.out.println();
         }
-        
+
         System.out.println(list[2*20][20]);
     }
 }

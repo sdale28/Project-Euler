@@ -1,13 +1,13 @@
 /**
  * @author Sam Dale
  * @version 11/27/13
- * 
- * Problem12: 
+ *
+ * Problem12:
  * What is the value of the first triangle number to have over five hundred divisors?
  */
 public class Problem12
 {
-    public static void main()
+    public static void main(String args[])
     {
         int triNum=0;
         boolean run=true;
@@ -22,7 +22,7 @@ public class Problem12
             }
         }
     }
-    
+
     public static boolean countInt(int triNum)
     {
         int count=1;
@@ -33,7 +33,7 @@ public class Problem12
                 count++;
             }
         }
-        
+
         if (count>500)
             return true;
         return false;

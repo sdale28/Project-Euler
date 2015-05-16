@@ -1,12 +1,12 @@
 /**
- * @author Sam Dale 
+ * @author Sam Dale
  * @version 12/25/13
- * 
+ *
  * Problem19: How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
  */
 public class Problem19
 {
-    public static void main()
+    public static void main(String args[])
     {
         int numDays=365*(2001-1900);
         for (int i=1900;i<=2000;i++)
@@ -71,7 +71,7 @@ public class Problem19
             if (day%7==0)
                 sunday++;
             day+=31;
-            
+
             year++;
         }
         System.out.println(sunday);

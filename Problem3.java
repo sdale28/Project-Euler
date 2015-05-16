@@ -1,12 +1,12 @@
 /**
- * @author Sam Dale 
+ * @author Sam Dale
  * @version 10/7/13
- * 
+ *
  * Problem 3: What is the largest prime factor of the number 600851475143?
  */
 public class Problem3
 {
-    public static void main()
+    public static void main(String args[])
     {
         long n=600851475143L;
         boolean primefactor=false;
@@ -20,7 +20,7 @@ public class Problem3
             }
         }
     }
-    
+
     public static boolean primefactor(int i)
     {
         boolean primefactor=true;
